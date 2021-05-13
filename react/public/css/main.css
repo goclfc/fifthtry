@@ -253,11 +253,31 @@ textarea {
 }
 
 .contact__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
   background-image: url("../images/contact/hero.jpeg");
 }
-
+.about-us-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/about/hero.jpeg");
+}
 .hero.hero-sm {
-  min-height: 40vh;
+  min-height: 50vh;
 }
 
 .hero:before {

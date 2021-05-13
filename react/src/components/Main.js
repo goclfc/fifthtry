@@ -1,24 +1,22 @@
 import { useEffect, useState } from "react";
 import { getItems } from "../services/get-item";
+import { getSection1 } from "../services/get-section1";
 import Item from "./Item";
+import Section1 from "./Section1";
+
 function Main() {
   const [itemData, setItemData] = useState([]);
+  const [section1Data, setSection1Data] = useState({});
   useEffect(() => {
     getItems().then((data) => setItemData(data));
+    getSection1().then((data) => setSection1Data(data));
   });
+
   return (
     <main>
       {/* <!-- Hero Section --> */}
       <section className="hero">
-        <div className="container">
-          <h1>ჩვენ ვაწყობთ ყველაზე სწრაფად და იაფად</h1>
-          <p className="lead">
-            ჩვენი საიტები ყველას ჯობია, ყველაფრით. მარტო ფეისბუქი გვჯობია ოდნავ
-          </p>
-          <a href="#" className="btn btn-primary">
-            ითანამშრომლეთ ჩვენთან
-          </a>
-        </div>
+        <Section1 heading={section1Data.heading} />
       </section>
 
       {/* <!-- Services Section --> */}
@@ -27,14 +25,13 @@ function Main() {
           <div className="services">
             {itemData.map((item) => {
               return (
-                <div className="service-col">
+                <div className="service-col" key={item.id}>
                   <Item
                     src={item.src}
                     description={item.description}
                     title={item.title}
                     url={item.url}
                   />
-                  ;
                 </div>
               );
             })}

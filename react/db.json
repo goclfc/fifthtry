@@ -22,10 +22,9 @@
       "url": "https://google.com"
     }
   ],
-  "section": [
-    {
-      "id": 1,
-      "heading": "this is json heading"
-    }
-  ]
+  "section": {
+    "id": 1,
+    "heading": "this is json heading",
+    "text": "ჩვენი საიტები ყველას ჯობია, ყველაფრით. მარტო ფეისბუქი გვჯობია ოდნავ"
+  }
 }

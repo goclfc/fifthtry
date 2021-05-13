@@ -2,7 +2,7 @@ function AboutUs() {
   return (
     <main>
       {/* <!-- Hero Section --> */}
-      <section class="hero hero-sm">
+      <section class="hero hero-sm about-us-hero">
         <div class="container">
           <h1 class="mb-0">ჩვენს შესახებ</h1>
         </div>

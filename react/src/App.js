@@ -17,7 +17,7 @@ function App() {
           <Route path="/about-us" component={AboutUs} />
           <Route path="/contact" component={Contact} />
         </Switch>
-        <Main />
+        
 
         <Footer />
       </Router>
