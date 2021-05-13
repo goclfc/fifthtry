@@ -5,13 +5,14 @@ import Item from "./Item";
 import Section1 from "./Section1";
 
 function Main() {
-  const [itemData, setItemData] = useState([]);
-  const [section1Data, setSection1Data] = useState({});
+  const [itemData, setItemData] = useState(null);
+  const [section1Data, setSection1Data] = useState(null);
   useEffect(() => {
     getItems().then((data) => setItemData(data));
     getSection1().then((data) => setSection1Data(data));
-  });
+  }, []);
 
+  if (itemData === null || section1Data === null) return <div>Loading...</div>;
   return (
     <main>
       {/* <!-- Hero Section --> */}
