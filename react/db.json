@@ -3,27 +3,27 @@
     {
       "id": 1,
       "src": "images/icons/web-design.svg",
-      "title": "asdasd",
-      "description": "asdasdasdasd asoidhaisugd asidugbasiudhg",
+      "title": "ვებ დიზაინი",
+      "description": "საუკეთესო გამოცდილების მქონე დიზაინი",
       "url": "https://google.com"
     },
     {
       "id": 2,
-      "src": "images/icons/web-design.svg",
-      "title": "asdasd",
-      "description": "asdasdasdasd asoidhaisugd asidugbasiudhg",
+      "src": "images/icons/frontend.svg",
+      "title": "ფრონტ ენდი",
+      "description": "ჩვენ ვქმნით ადაპტურ, მოქნილ ვებ გვერდებს",
       "url": "https://google.com"
     },
     {
       "id": 3,
-      "src": "images/icons/web-design.svg",
-      "title": "asdasd",
-      "description": "asdasdasdasd asoidhaisugd asidugbasiudhg",
+      "src": "images/icons/backend.svg",
+      "title": "ბექ-ენდი",
+      "description": "ჩვენ ვაწესრიგებთ ბაზებს , ვქმნით საუკეთესო გამოცდილებით",
       "url": "https://google.com"
     }
   ],
   "section": {
     "id": 1,
-    "heading": "this is json heading"
+    "heading": "ვებ დეველოპერების გუნდი"
   }
 }
